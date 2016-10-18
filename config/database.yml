@@ -20,6 +20,7 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+  host: localhost
 
 development:
   <<: *default
@@ -80,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: nzpol-mail-spam_production
-  username: nzpol-mail-spam
+  database: rails_project_production
+  username: rails
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>

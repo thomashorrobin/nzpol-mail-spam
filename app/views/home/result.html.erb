@@ -1,0 +1,24 @@
+<h1>your MPs</h1>
+<p>These are the local MPs in your area you can spam about your issue</p>
+<br />
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Electorate</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mps.each do |member_of_parliament| %>
+      <tr>
+        <td><%= member_of_parliament.first_name %></td>
+        <td><%= member_of_parliament.last_name %></td>
+        <td><%= mail_to member_of_parliament.email, member_of_parliament.email %></td>
+        <td><%= member_of_parliament.electorate.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

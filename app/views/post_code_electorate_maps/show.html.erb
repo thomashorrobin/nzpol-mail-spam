@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Electorate:</strong>
+  <%= @post_code_electorate_map.electorate %>
+</p>
+
+<p>
+  <strong>Post code:</strong>
+  <%= @post_code_electorate_map.post_code %>
+</p>
+
+<%= link_to 'Edit', edit_post_code_electorate_map_path(@post_code_electorate_map) %> |
+<%= link_to 'Back', post_code_electorate_maps_path %>

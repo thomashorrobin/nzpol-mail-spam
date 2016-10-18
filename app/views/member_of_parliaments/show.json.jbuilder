@@ -1,0 +1,1 @@
+json.partial! "member_of_parliaments/member_of_parliament", member_of_parliament: @member_of_parliament

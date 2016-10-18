@@ -1,0 +1,1 @@
+json.array! @member_of_parliaments, partial: 'member_of_parliaments/member_of_parliament', as: :member_of_parliament

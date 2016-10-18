@@ -1,0 +1,9 @@
+<h1>nzpol spam helper</h1>
+<p>this only works with post codes 5545, 6011, and 6012 db only contains example data</p>
+<br />
+
+<%= form_tag("/home/result") do %>
+  <%= label_tag(:postcode, "Search for Postcode:") %>
+  <%= text_field_tag(:postcode) %>
+  <%= submit_tag("Search") %>
+<% end %>

@@ -1,0 +1,1 @@
+json.array! @post_code_electorate_maps, partial: 'post_code_electorate_maps/post_code_electorate_map', as: :post_code_electorate_map

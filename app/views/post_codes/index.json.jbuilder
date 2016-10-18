@@ -1,0 +1,1 @@
+json.array! @post_codes, partial: 'post_codes/post_code', as: :post_code

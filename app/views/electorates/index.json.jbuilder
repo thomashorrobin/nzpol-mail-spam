@@ -1,0 +1,1 @@
+json.array! @electorates, partial: 'electorates/electorate', as: :electorate

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NzpolMailSpam</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= link_to "Home", root_path %>
+<%= link_to "MPs", member_of_parliaments_path %>
+<%= link_to "Post Codes", post_codes_path %>
+<%= link_to "Electorates", electorates_path %>
+
+<%= yield %>
+
+</body>
+</html>

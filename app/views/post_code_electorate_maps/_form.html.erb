@@ -1,0 +1,25 @@
+<%= form_for(@post_code_electorate_map) do |f| %>
+  <% if @post_code_electorate_map.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post_code_electorate_map.errors.count, "error") %> prohibited this post_code_electorate_map from being saved:</h2>
+
+      <ul>
+      <% @post_code_electorate_map.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :electorate_id %><br>
+    <%= f.text_field :electorate_id %>
+  </div>
+  <div class="field">
+    <%= f.label :post_code_id %><br>
+    <%= f.text_field :post_code_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,1 @@
+json.partial! "post_codes/post_code", post_code: @post_code

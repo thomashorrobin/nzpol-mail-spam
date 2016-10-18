@@ -1,0 +1,1 @@
+json.partial! "post_code_electorate_maps/post_code_electorate_map", post_code_electorate_map: @post_code_electorate_map

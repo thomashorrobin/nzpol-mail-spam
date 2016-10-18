@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Post Code Electorate Maps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Electorate</th>
+      <th>Post code</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @post_code_electorate_maps.each do |post_code_electorate_map| %>
+      <tr>
+        <td><%= post_code_electorate_map.electorate %></td>
+        <td><%= post_code_electorate_map.post_code %></td>
+        <td><%= link_to 'Show', post_code_electorate_map %></td>
+        <td><%= link_to 'Edit', edit_post_code_electorate_map_path(post_code_electorate_map) %></td>
+        <td><%= link_to 'Destroy', post_code_electorate_map, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post code electorate map', new_post_code_electorate_map_path %>

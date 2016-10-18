@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: rails_project_production
+  database: nzpol_mail_spam_production
   username: rails
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>

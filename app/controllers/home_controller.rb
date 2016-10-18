@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   end
 
   def result
-    post_code = PostCode.find(params[:postcode])
+    post_code = PostCode.find_by(code: params[:postcode])
     @mps = Array.new
     maps = post_code.post_code_electorate_maps
     maps.each do |map|
